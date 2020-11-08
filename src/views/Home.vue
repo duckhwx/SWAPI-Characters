@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app color="light-blue darken-3">
+      <v-toolbar-title class="titleToolbar">
+        Star Wars - API Characters
+      </v-toolbar-title>
+    </v-app-bar>
+    <router-view />
+  </v-app>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
-
 export default {
   name: 'Home',
-  components: {
-    HelloWorld,
-  },
 };
 </script>
+<style lang="scss" scoped>
+.titleToolbar {
+  color: white;
+}
+</style>
